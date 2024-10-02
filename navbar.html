@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: aquamarine;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            /* Pusatkan horizontal */
+            align-items: center;
+            /* Pusatkan vertikal */
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            /* Sebar elemen ul */
+            list-style-type: none;
+            width: 50%;
+            /* Atur lebar ul untuk efek space-between */
+            padding: 0;
+            margin: 0;
+            /* Hilangkan margin default dari ul */
+        }
+
+        nav ul li {
+            margin: 0;
+            /* Hilangkan margin agar space-between berfungsi */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                /* Penuhkan lebar pada tampilan mobile */
+                align-items: center;
+                /* Selaraskan item ke tengah */
+            }
+
+            nav ul li {
+                margin: 10px 0;
+                /* Berikan margin vertikal untuk tampilan mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
