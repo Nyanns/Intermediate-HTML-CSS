@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid: auto auto / repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .container>.item {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .item video {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .item button {
+            background-color: transparent;
+            border-radius: 10px;
+            border: 2px solid #ff6666;
+            color: #ff6666;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item button:hover {
+            background-color: #ff6666;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Membuat item terakhir melebar ke seluruh lebar layar */
+        .item.wide {
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <video
+                src="/sign-up-form/Images/Aesthetic Anime GIF - Aesthetic Anime Anime Girl - Temukan & Bagikan GIF.mp4"
+                autoplay loop muted></video>
+        </div>
+        <div class="item">
+            <video src="/sign-up-form/Images/Cat Kiss GIF - Cat Kiss - Temukan & Bagikan GIF.mp4" autoplay loop
+                muted></video>
+        </div>
+        <div class="item">
+            <video src="/sign-up-form/Images/Pixel Art Urban GIF - Pixel Art Urban City - Temukan & Bagikan GIF.mp4"
+                autoplay loop muted></video>
+        </div>
+        <div class="item">
+            <video src="/sign-up-form/Images/Pokemon Pixel Art GIF - Pokemon Pixel Art Cute - Temukan & Bagikan GIF.mp4"
+                autoplay loop muted></video>
+        </div>
+        <div class="item">
+            <video src="/sign-up-form/Images/Miku Gif GIF - Miku Gif Pixel - Temukan & Bagikan GIF.mp4" autoplay loop
+                muted></video>
+        </div>
+        <div class="item">
+            <button>Play</button>
+        </div>
+        <!-- item terakhir melebar ke seluruh lebar -->
+        <div class="item wide">
+            <video src="/sign-up-form/Images/Miku Gif GIF - Miku Gif Pixel - Temukan & Bagikan GIF.mp4" autoplay loop
+                muted></video>
+        </div>
+    </div>
+</body>
+
+</html>

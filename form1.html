@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #FFE4E1;
+            /* Light pink background */
+            font-family: 'Comic Sans MS', sans-serif;
+            /* Fun and playful font */
+            color: #333;
+            /* Dark gray text color */
+        }
+
+        form {
+            background-color: #FFF0F5;
+            /* Light lavender-pink form background */
+            border: 5px solid #FFB6C1;
+            /* Pink border */
+            border-radius: 15px;
+            padding: 20px;
+            width: min(90%, 500px);
+            margin: 50px auto;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        legend {
+            font-size: 1.5em;
+            color: #FF69B4;
+            /* Hot pink */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #FF1493;
+            /* Deep pink */
+            margin-right: 10px;
+            width: 30%;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            display: inline-block;
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border: 2px solid #FF69B4;
+            border-radius: 10px;
+            background-color: #FFF;
+            color: #333;
+            font-size: 1em;
+            vertical-align: top;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        button {
+            background-color: #FF69B4;
+            /* Hot pink button */
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #FF1493;
+            /* Darker pink on hover */
+            transform: translateY(-3px);
+            /* Slight bounce effect */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #FF1493;
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <legend>User Details</legend>
+
+        <div class="form-group">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="msg">Message :</label>
+            <textarea name="msg" id="user_message"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit">Send Your Message</button>
+        </div>
+    </form>
+</body>
+
+</html>
